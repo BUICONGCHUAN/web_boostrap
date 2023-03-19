@@ -1,0 +1,54 @@
+.option_product li{
+    list-style: none;
+    padding-top: 20px;
+}
+.item-side{
+
+    border-bottom: 1px solid #f7f8f9;
+}
+.price_product{
+    padding-bottom: 15px;
+}
+.price span{
+    padding-left: 10px;
+}
+hr{
+    width: 100%;
+}
+.title_product{
+    border-bottom: 1px solid #f7f8f9;
+}
+h1{
+    font-size: 16px;
+}
+.btn-filter{
+    width: 85px;
+    height: 45px;
+    background-color: white;
+    border: 0.5px solid #000;
+    border-radius: 16px 0;
+}
+.btn-filter :hover{
+    background-color: #000;
+    color: white;
+    transition: 0.3s;
+}
+.title-option select{
+    width: 200px;
+    height: 40px;
+    border-radius :50px; 
+    padding-left: 10px;
+}
+.select-hide {
+    display: none;
+  }
+select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}

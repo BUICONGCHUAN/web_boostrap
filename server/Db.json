@@ -1,0 +1,149 @@
+{
+    "product": [
+        {
+            "id": 1,
+            "name" : "Đầm Lụa Xòe Phối Khuy",
+            "img": "sp1.jpg",
+            "img2": "sp1.1.jpg",
+            "color":{
+                "color1":"cl1.png",
+                "color2":"cl2.png",
+                "color3":"cl3.png"
+            },
+            "price": 320.000
+        },
+        {
+            "id": 2,
+            "name" : "Đầm Lụa Xòe Phối Khuy",
+            "img": "sp2.jpg",
+            "img2": "sp2.2.jpg",
+            "color":{
+                "color1":"cl1.png",
+                "color2":"cl2.png",
+                "color3":"cl3.png"
+            },
+            "price": 320.000
+        },
+        {
+            "id": 3,
+            "name" : "Đầm Lụa Xòe Phối Khuy",
+            "img": "sp3.jpg",
+            "img2": "sp3.3.jpg",
+            "color":{
+                "color1":"cl1.png",
+                "color2":"cl2.png",
+                "color3":"cl3.png"
+            },
+            "price": 320.000
+        },
+        {
+            "id": 4,
+            "name" : "Đầm Lụa Xòe Phối Khuy",
+            "img": "sp4.jpg",
+            "img2": "sp4.4.jpg",
+            "color":{
+                "color1":"cl1.png",
+                "color2":"cl2.png",
+                "color3":"cl5.png"
+            },
+            "price": 320.000
+        },
+        {
+            "id": 5,
+            "name" : "Đầm Lụa Xòe Phối Khuy",
+            "img": "sp5.jpg",
+            "img2": "sp5.5.jpg",
+            "color":{
+                "color1":"cl1.png",
+                "color2":"cl2.png",
+                "color3":"cl3.png"
+            },
+            "price": 320.000
+        },
+        {
+            "id": 6,
+            "name" : "Đầm Lụa Xòe Phối Khuy",
+            "img": "sp6.jpg",
+            "img2": "sp6.6.jpg",
+            "color":{
+                "color1":"cl1.png",
+                "color2":"cl2.png",
+                "color3":"cl3.png"
+            },
+            "price": 320.000
+        },
+        {
+            "id": 7,
+            "name" : "Đầm Lụa Xòe Phối Khuy",
+            "img": "sp7.jpg",
+            "img2": "sp7.7.jpg",
+            "color":{
+                "color1":"cl1.png",
+                "color2":"cl2.png",
+                "color3":"cl3.png"
+            },
+            "price": 320.000
+        },
+        {
+            "id": 8,
+            "name" : "Đầm Lụa Xòe Phối Khuy",
+            "img": "sp8.jpg",
+            "img2": "sp8.8.jpg",
+            "color":{
+                "color1":"cl1.png",
+                "color2":"cl2.png",
+                "color3":"cl3.png"
+            },
+            "price": 320.000
+        },
+        {
+            "id": 9,
+            "name" : "Đầm Lụa Xòe Phối Khuy",
+            "img": "sp9.jpg",
+            "img2": "sp9.9.jpg",
+            "color":{
+                "color1":"cl1.png",
+                "color2":"cl2.png",
+                "color3":"cl3.png"
+            },
+            "price": 320.000
+        },
+        {
+            "id": 10,
+            "name" : "Đầm Lụa Xòe Phối Khuy",
+            "img": "sp10.jpg",
+            "img2": "sp10.10.jpg",
+            "color":{
+                "color1":"cl1.png",
+                "color2":"cl2.png",
+                "color3":"cl3.png"
+            },
+            "price": 320.000
+        },
+        {
+            "id": 11,
+            "name" : "Đầm Lụa Xòe Phối Khuy",
+            "img": "sp11.jpg",
+            "img2": "sp11.11.jpg",
+            "color":{
+                "color1":"cl1.png",
+                "color2":"cl2.png",
+                "color3":"cl3.png"
+            },
+            "price": 320.000
+        },
+        {
+            "id": 12,
+            "name" : "Đầm Lụa Xòe Phối Khuy",
+            "img": "sp12.jpg",
+            "img2": "sp12.12.jpg",
+            "color":{
+                "color1":"cl1.png",
+                "color2":"cl2.png",
+                "color3":"cl3.png"
+            },
+            "price": 320.000
+        }
+
+    ]
+}
