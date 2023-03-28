@@ -4,12 +4,14 @@ import Header from '../component/Header'
 import '../styles/Home.css'
 import '../styles/Product.css'
 import { products } from '../fakeData'
+import { useSelector, useDispatch } from "react-redux";
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react';
+import { addProduct } from '../store/ProductSlide'
 import axios from 'axios';
 export default function Product() {
+  const dispatch = useDispatch();
   const [productList, setProductList] = useState([]);
-
   useEffect(() => {
     const callApi = async () => {
       const result = await axios.get('http://localhost:3000/product')
@@ -19,6 +21,9 @@ export default function Product() {
     callApi()
   }, [])
 
+  const onAddProduct = (product) => () => {
+    dispatch(addProduct(product));
+  }
   return (
     
     <div>
