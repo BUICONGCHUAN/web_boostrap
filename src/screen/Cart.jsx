@@ -1,9 +1,12 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import Footer from '../component/Footer'
 import Header from '../component/Header'
 import '../styles/Cart.css'
-
+//import { getImagePath } from '../untils'
 export default function () {
+    const listTaskStore = useSelector((state) => state.product.productList);
+    console.log('aaaa',listTaskStore)
   return (
     <div>
         <Header />
@@ -26,64 +29,41 @@ export default function () {
                         </div>
                     </div>
                     <hr/>
-                    <div class="row cart-info-list pt-3">
-                        <div class="col-2 cart-info-list-img">
-                            <img class='color_1' src={`${require("../img/sp1.jpg")}`} alt=""/>
-                        </div>
-                        <div class="col-3">
-                            <p> Đầm lụa xòe phối khuy</p>
-                            <div class="color-size ">
-                                <p>Màu sắc:<span>Vàng hoa</span></p>
-                                <p>Size:<span>L</span></p>
+                    {listTaskStore.map((item)=>{
+                       
+                    return(
+
+                        <div key={item?.id} class="row cart-info-list pt-3">
+                            <div class="col-2 cart-info-list-img">
+                                <img class='img-product' src={require(`../img/${item.img}`)} alt=""/>
                             </div>
-                        </div>
-                        <div class="col-2">
-                           <p>-90.000đ</p>
-                        </div>
-                        <div class="col">
-                            <div class="detail-info-quantity-input">
-                                    <input type="hidden"></input>
-                                    <input type="hidden"></input>
-                                    <input type="number"></input>
-                                    <div class="detail-info-quantity-increase">+</div>
-                                    <div class="detail-info-quantity-decrease">-</div>
+                            <div class="col-3">
+                                <p> Đầm lụa xòe phối khuy</p>
+                                <div class="color-size ">
+                                    <p>Màu sắc:<span>Vàng hoa</span></p>
+                                    <p>Size:<span>L</span></p>
                                 </div>
-                        </div>
-                        <div class="col cart-info-list-price d-flex justify-content-around">
-                            <p>1.450.000đ</p>                            
-                            <a><i class="fa-solid fa-trash-can"></i></a>
-                        </div>
-                    </div>
-                    <hr/>
-                    <div class="row cart-info-list pt-3">
-                        <div class="col-2 cart-info-list-img">
-                            <img class='color_1' src={`${require("../img/sp1.jpg")}`} alt=""/>
-                        </div>
-                        <div class="col-3">
-                            <p> Đầm lụa xòe phối khuy</p>
-                            <div class="color-size ">
-                                <p>Màu sắc:<span>Vàng hoa</span></p>
-                                <p>Size:<span>L</span></p>
                             </div>
-                        </div>
-                        <div class="col-2">
-                           <p>-90.000đ</p>
-                        </div>
-                        <div class="col">
-                            <div class="detail-info-quantity-input">
-                                    <input type="hidden"></input>
-                                    <input type="hidden"></input>
-                                    <input type="number"></input>
-                                    <div class="detail-info-quantity-increase">+</div>
-                                    <div class="detail-info-quantity-decrease">-</div>
-                                </div>
-                        </div>
-                        <div class="col cart-info-list-price d-flex justify-content-around">
-                            <p>1.450.000đ</p>                            
-                            <a><i class="fa-solid fa-trash-can"></i></a>
-                        </div>
-                    </div>
-                </div>
+                            <div class="col-2">
+                               <p>{item.price}.000đ</p>
+                            </div>
+                            <div class="col">
+                                <div class="detail-info-quantity-input">
+                                        <input type="hidden"></input>
+                                        <input type="hidden"></input>
+                                        <input type="number"></input>
+                                        <div class="detail-info-quantity-increase">+</div>
+                                        <div class="detail-info-quantity-decrease">-</div>
+                                    </div>
+                            </div>
+                            <div class="col cart-info-list-price d-flex justify-content-around">
+                                <p>1.450.000đ</p>                            
+                                <a><i class="fa-solid fa-trash-can"></i></a>
+                            </div>
+                        </div>                       
+                    )
+                    })}                  
+                </div>               
                 <div class="col-4 ">
                     <div class="cart-summary  ">
                         <div class='cart-summary-total '>

@@ -1,7 +1,11 @@
 import Footer from '../component/Footer';
 import Header from '../component/Header';
 import '../styles/Home.css';
+
+
+
 function Home() {
+  
   return (
     
     <div className="Home ">

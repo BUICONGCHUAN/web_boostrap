@@ -7,17 +7,21 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'remixicon/fonts/remixicon.css';
 import { configureStore } from '@reduxjs/toolkit';
 import productReducer from "../src/store/ProductSlide";
+import { Provider } from 'react-redux';
 export const store = configureStore({
   reducer: {
     product: productReducer
-  }
+  },
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode store={store}>
+  <Provider  store={store}>
+ <React.StrictMode>
       <Routers/>
   </React.StrictMode>
+  </Provider>
+ 
 );
 
 // If you want to start measuring performance in your app, pass a function

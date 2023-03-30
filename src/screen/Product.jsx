@@ -3,15 +3,14 @@ import Footer from '../component/Footer'
 import Header from '../component/Header'
 import '../styles/Home.css'
 import '../styles/Product.css'
-import { products } from '../fakeData'
-import { useSelector, useDispatch } from "react-redux";
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react';
-import { addProduct } from '../store/ProductSlide'
 import axios from 'axios';
+import { useDispatch } from 'react-redux'
+import { addProduct } from '../store/ProductSlide'
 export default function Product() {
-  const dispatch = useDispatch();
   const [productList, setProductList] = useState([]);
+  const dispatch = useDispatch();
   useEffect(() => {
     const callApi = async () => {
       const result = await axios.get('http://localhost:3000/product')
@@ -23,7 +22,8 @@ export default function Product() {
 
   const onAddProduct = (product) => () => {
     dispatch(addProduct(product));
-  }
+  };
+
   return (
     
     <div>
@@ -104,7 +104,7 @@ export default function Product() {
                             <h3 class="text_product pt-2 mb-3">{e.name}</h3>
                             <div class="price_product d-flex justify-content-between">
                               <div class="price fw-bold">{e.price}.000đ<span>1.990.000đ</span></div>
-                              <button class="add_card"><i class="fa-solid fa-bag-shopping"></i></button>
+                              <button onClick={onAddProduct(e)} class="add_card"><i class="fa-solid fa-bag-shopping"></i></button>
                             </div>
                           </div>
                         </div>
